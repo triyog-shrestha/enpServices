@@ -457,11 +457,11 @@ function App() {
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/joshua-budhathoki" target="_blank" rel="noreferrer" aria-label="linkedin">
+            {/* <a href="https://www.linkedin.com/in/joshua-budhathoki" target="_blank" rel="noreferrer" aria-label="linkedin">
               <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zm2-5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" />
               </svg>
-            </a>
+            </a> */}
           </div>
         </footer>
 
