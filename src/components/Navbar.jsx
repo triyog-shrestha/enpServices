@@ -1,0 +1,89 @@
+import { useEffect, useState } from 'react'
+
+function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const links = [
+    { label: 'About', href: '#home' },
+    { label: 'Services', href: '#services' },
+    { label: 'Why Us', href: '#why' },
+    { label: 'Cart', href: '#book' },
+  ]
+
+  useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 8)
+
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth >= 760) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    window.addEventListener('resize', onResize)
+
+    return () => window.removeEventListener('resize', onResize)
+  }, [])
+
+  useEffect(() => {
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false)
+      }
+    }
+
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden'
+      window.addEventListener('keydown', onKeyDown)
+    }
+
+    return () => {
+      document.body.style.overflow = ''
+      window.removeEventListener('keydown', onKeyDown)
+    }
+  }, [isMenuOpen])
+
+  return (
+    <header className={`site-navbar${isScrolled ? ' is-scrolled' : ''}${isMenuOpen ? ' menu-open' : ''}`}>
+      <a className="brand" href="#home" aria-label="E&P Services home">
+        <span className="brand-logo" aria-hidden="true">
+          S
+        </span>
+        <span className="brand-text">E&P SERVICES</span>
+      </a>
+
+      <button
+        className="menu-toggle"
+        type="button"
+        aria-expanded={isMenuOpen}
+        aria-controls="primary-navigation"
+        aria-label="Toggle navigation"
+        onClick={() => setIsMenuOpen((open) => !open)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <nav className={`nav-links${isMenuOpen ? ' is-open' : ''}`} id="primary-navigation" aria-label="primary">
+        {links.map((link) => (
+          <a key={link.label} href={link.href} onClick={() => setIsMenuOpen(false)}>
+            {link.label}
+          </a>
+        ))}
+      </nav>
+
+
+      {isMenuOpen ? <button className="nav-backdrop" type="button" aria-label="Close menu" onClick={() => setIsMenuOpen(false)} /> : null}
+    </header>
+  )
+}
+
+export default Navbar
