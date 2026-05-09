@@ -1,0 +1,2487 @@
+{
+  "catalog_name": "NDT Decorative 2026-I",
+  "categories": {
+    "wall_lights": "Wall Lights",
+    "hanging_lights": "Hanging Lights",
+    "hanging_dome_lights": "Hanging & Dome Lights",
+    "chandeliers": "Chandeliers",
+    "ceiling_fix_chandelier": "Ceiling Fix Chandelier",
+    "crystal_chandeliers": "Crystal Chandeliers",
+    "candle_light": "Candle Light",
+    "mirror_lights": "Mirror & Mirror Glass LED",
+    "dome_lights": "Dome Lights",
+    "wall_exterior_lights": "Wall Exterior Lights",
+    "foot_lights": "Foot Lights",
+    "gate_lights": "Gate Lights",
+    "pole_lights": "Pole Lights",
+    "table_lamp": "Table Lamp",
+    "floor_lamp": "Floor Lamp",
+    "commercial_light": "Commercial Light",
+    "bulbs": "Bulbs",
+    "socket_box": "IP66 Socket Box",
+    "fans": "Fans",
+    "decorative_lights": "Decorative Lights"
+  },
+  "products": [
+    {
+      "id": 1,
+      "product_code": "LW5253",
+      "mrp": 4000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "LW5253.jpg"
+    },
+    {
+      "id": 2,
+      "product_code": "W1020",
+      "mrp": 8000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W1020.jpg"
+    },
+    {
+      "id": 3,
+      "product_code": "LW5246/BK",
+      "mrp": 3400,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "LW5246-BK.jpg"
+    },
+    {
+      "id": 4,
+      "product_code": "BD4489/600",
+      "mrp": 7000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD4489-600.jpg"
+    },
+    {
+      "id": 5,
+      "product_code": "YBD3511",
+      "mrp": 5000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "YBD3511.jpg"
+    },
+    {
+      "id": 6,
+      "product_code": "LW5277-B",
+      "mrp": 4000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "LW5277-B.jpg"
+    },
+    {
+      "id": 7,
+      "product_code": "LW5227-C",
+      "mrp": 4000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "LW5227-C.jpg"
+    },
+    {
+      "id": 8,
+      "product_code": "DZ4668-GD",
+      "mrp": 5000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "DZ4668-GD.jpg"
+    },
+    {
+      "id": 9,
+      "product_code": "W1133/BK",
+      "mrp": 5500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W1133-BK.jpg"
+    },
+    {
+      "id": 10,
+      "product_code": "H36/400MM",
+      "mrp": 11500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "H36-400MM.jpg"
+    },
+    {
+      "id": 11,
+      "product_code": "MT2305",
+      "mrp": 3000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "MT2305.jpg"
+    },
+    {
+      "id": 12,
+      "product_code": "W1134 GD",
+      "mrp": 6500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W1134-GD.jpg"
+    },
+    {
+      "id": 13,
+      "product_code": "BD4485/600MM",
+      "mrp": 7000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD4485-600MM.jpg"
+    },
+    {
+      "id": 14,
+      "product_code": "NM6216",
+      "mrp": 4500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "NM6216.jpg"
+    },
+    {
+      "id": 15,
+      "product_code": "W1036",
+      "mrp": 4500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W1036.jpg"
+    },
+    {
+      "id": 16,
+      "product_code": "A001 GOLD/BLACK",
+      "mrp": 3000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights"
+    },
+    {
+      "id": 17,
+      "product_code": "AX09BK",
+      "mrp": 3600,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "AX09BK.jpg"
+    },
+    {
+      "id": 18,
+      "product_code": "W107-W",
+      "mrp": 5500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W107-W.jpg"
+    },
+    {
+      "id": 19,
+      "product_code": "W1011",
+      "mrp": 4800,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W1011.jpg"
+    },
+    {
+      "id": 20,
+      "product_code": "ZA01 GD/700MM",
+      "mrp": 12000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "ZA01-GD-700MM.jpg"
+    },
+    {
+      "id": 21,
+      "product_code": "W1005",
+      "mrp": 4200,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W1005.jpg"
+    },
+    {
+      "id": 22,
+      "product_code": "FS40-01C Gold and Black",
+      "mrp": 2800,
+      "category": "wall_lights",
+      "category_label": "Wall Lights"
+    },
+    {
+      "id": 23,
+      "product_code": "HX034",
+      "mrp": 1700,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "details": {
+        "variant": "A"
+      }
+    },
+    {
+      "id": 24,
+      "product_code": "HX033",
+      "mrp": 1700,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "details": {
+        "variant": "B"
+      }
+    },
+    {
+      "id": 25,
+      "product_code": "HX48",
+      "mrp": 1700,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "details": {
+        "variant": "C"
+      }
+    },
+    {
+      "id": 26,
+      "product_code": "HX47",
+      "mrp": 1700,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "details": {
+        "variant": "D"
+      }
+    },
+    {
+      "id": 27,
+      "product_code": "3724-1",
+      "mrp": 1500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "3724-1.jpg"
+    },
+    {
+      "id": 28,
+      "product_code": "XL5280",
+      "mrp": 3800,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "XL5280.jpg"
+    },
+    {
+      "id": 29,
+      "product_code": "Q865-1",
+      "mrp": 3800,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "Q865-1.jpg"
+    },
+    {
+      "id": 30,
+      "product_code": "FY-511",
+      "mrp": 1800,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "FY-511.jpg"
+    },
+    {
+      "id": 31,
+      "product_code": "BD690",
+      "mrp": 3600,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD690.jpg"
+    },
+    {
+      "id": 32,
+      "product_code": "BD02",
+      "mrp": 4000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD02.jpg"
+    },
+    {
+      "id": 33,
+      "product_code": "BD08",
+      "mrp": 4200,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD08.jpg"
+    },
+    {
+      "id": 34,
+      "product_code": "BD04",
+      "mrp": 3600,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD04.jpg"
+    },
+    {
+      "id": 35,
+      "product_code": "BD07",
+      "mrp": 4000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD07.jpg"
+    },
+    {
+      "id": 36,
+      "product_code": "BD03",
+      "mrp": 4000,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD03.jpg"
+    },
+    {
+      "id": 37,
+      "product_code": "B1915",
+      "mrp": 4800,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "B1915.jpg"
+    },
+    {
+      "id": 38,
+      "product_code": "BD09",
+      "mrp": 4800,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "BD09.jpg"
+    },
+    {
+      "id": 39,
+      "product_code": "FY-16S-Grey Aluminium",
+      "mrp": 1850,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "details": {
+        "size": "160x50x45MM",
+        "power": "6W"
+      }
+    },
+    {
+      "id": 40,
+      "product_code": "W103-W",
+      "mrp": 5500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W103-W.jpg"
+    },
+    {
+      "id": 41,
+      "product_code": "W02-W",
+      "mrp": 5500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W02-W.jpg"
+    },
+    {
+      "id": 42,
+      "product_code": "W111",
+      "mrp": 5500,
+      "category": "wall_lights",
+      "category_label": "Wall Lights",
+      "image": "W111.jpg"
+    },
+    {
+      "id": 43,
+      "product_code": "GG1407",
+      "mrp": 3400,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "GG1407.jpg"
+    },
+    {
+      "id": 44,
+      "product_code": "TJ7711-2B",
+      "mrp": 8500,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "TJ7711-2B.jpg"
+    },
+    {
+      "id": 45,
+      "product_code": "B029-WHITE BLACK",
+      "mrp": 2100,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 46,
+      "product_code": "B034-3",
+      "mrp": 5200,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "B034-3.jpg"
+    },
+    {
+      "id": 47,
+      "product_code": "W1165",
+      "mrp": 7000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "A - Single"
+      }
+    },
+    {
+      "id": 48,
+      "product_code": "W1165",
+      "mrp": 7500,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "B - Medium"
+      }
+    },
+    {
+      "id": 49,
+      "product_code": "W1165",
+      "mrp": 8000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "C - Large"
+      }
+    },
+    {
+      "id": 50,
+      "product_code": "W1154",
+      "mrp": 4500,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "A"
+      }
+    },
+    {
+      "id": 51,
+      "product_code": "W1154",
+      "mrp": 5000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "B"
+      }
+    },
+    {
+      "id": 52,
+      "product_code": "W1154",
+      "mrp": 8000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "C"
+      }
+    },
+    {
+      "id": 53,
+      "product_code": "W1154",
+      "mrp": 4900,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "D"
+      }
+    },
+    {
+      "id": 54,
+      "product_code": "G121-130",
+      "mrp": 20000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "G121-130.jpg"
+    },
+    {
+      "id": 55,
+      "product_code": "T07",
+      "mrp": 4000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "T07.jpg"
+    },
+    {
+      "id": 56,
+      "product_code": "850/400MM",
+      "mrp": 14000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "850-400MM.jpg"
+    },
+    {
+      "id": 57,
+      "product_code": "TJ7504/GD",
+      "mrp": 11000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "TJ7504-GD.jpg"
+    },
+    {
+      "id": 58,
+      "product_code": "MT623 Linear Light 24W",
+      "mrp": 3800,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 59,
+      "product_code": "MG77 6 Light",
+      "mrp": 20000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 60,
+      "product_code": "MG77 8 Light",
+      "mrp": 24000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 61,
+      "product_code": "MG77 12 Light 2 Step",
+      "mrp": 30000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 62,
+      "product_code": "B050-3",
+      "mrp": 7500,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "B050-3.jpg"
+    },
+    {
+      "id": 63,
+      "product_code": "B042-3",
+      "mrp": 5800,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "B042-3.jpg"
+    },
+    {
+      "id": 64,
+      "product_code": "830",
+      "mrp": 12000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "830.jpg"
+    },
+    {
+      "id": 65,
+      "product_code": "828",
+      "mrp": 14000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "Small"
+      }
+    },
+    {
+      "id": 66,
+      "product_code": "828",
+      "mrp": 18000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "Large"
+      }
+    },
+    {
+      "id": 67,
+      "product_code": "826",
+      "mrp": 15000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "826.jpg"
+    },
+    {
+      "id": 68,
+      "product_code": "HJA3768/400+600+800MM",
+      "mrp": 30000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 69,
+      "product_code": "XL8031/400MM",
+      "mrp": 17000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "XL8031-400MM.jpg"
+    },
+    {
+      "id": 70,
+      "product_code": "XL8041/400+600+800MM",
+      "mrp": 45000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 71,
+      "product_code": "KX167-11",
+      "mrp": 29000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "KX167-11.jpg"
+    },
+    {
+      "id": 72,
+      "product_code": "DD7026/200+400+600MM",
+      "mrp": 23000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 73,
+      "product_code": "LK560",
+      "mrp": 17000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "LK560.jpg"
+    },
+    {
+      "id": 74,
+      "product_code": "YBD3574-A",
+      "mrp": 6500,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "YBD3574-A.jpg"
+    },
+    {
+      "id": 75,
+      "product_code": "3 RING WHITE",
+      "mrp": 6800,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "White"
+      }
+    },
+    {
+      "id": 76,
+      "product_code": "3 RING BLACK",
+      "mrp": 6800,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "Black"
+      }
+    },
+    {
+      "id": 77,
+      "product_code": "3 RING GOLD",
+      "mrp": 7000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "variant": "Gold"
+      }
+    },
+    {
+      "id": 78,
+      "product_code": "2 RING LONG 8/23",
+      "mrp": 14000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 79,
+      "product_code": "MG SKY BLUE",
+      "mrp": 3000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "MG-SKY-BLUE.jpg"
+    },
+    {
+      "id": 80,
+      "product_code": "145",
+      "mrp": 8000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "145.jpg"
+    },
+    {
+      "id": 81,
+      "product_code": "0178",
+      "mrp": 6000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "0178.jpg"
+    },
+    {
+      "id": 82,
+      "product_code": "155/1",
+      "mrp": 6000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "155-1.jpg"
+    },
+    {
+      "id": 83,
+      "product_code": "GG1405/380",
+      "mrp": 7000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "GG1405-380.jpg"
+    },
+    {
+      "id": 84,
+      "product_code": "YBD3554-1",
+      "mrp": 4500,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "YBD3554-1.jpg"
+    },
+    {
+      "id": 85,
+      "product_code": "AXD821-2R",
+      "mrp": 8500,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "AXD821-2R.jpg"
+    },
+    {
+      "id": 86,
+      "product_code": "MT3511",
+      "mrp": 5000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "MT3511.jpg"
+    },
+    {
+      "id": 87,
+      "product_code": "MT3510",
+      "mrp": 5000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "MT3510.jpg"
+    },
+    {
+      "id": 88,
+      "product_code": "AH2510/400+600MM",
+      "mrp": 14000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 89,
+      "product_code": "6157/3 GOLD CRYSTAL",
+      "mrp": 16000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 90,
+      "product_code": "GG667/290MM BLACK/WHITE",
+      "mrp": 3400,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights"
+    },
+    {
+      "id": 91,
+      "product_code": "FD",
+      "mrp": 3500,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "FD.jpg"
+    },
+    {
+      "id": 92,
+      "product_code": "24W Warm LED Hanging",
+      "mrp": 2000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "details": {
+        "colors": "Yellow/Green/Black"
+      }
+    },
+    {
+      "id": 93,
+      "product_code": "AH262450W",
+      "mrp": 16000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "AH262450W.jpg"
+    },
+    {
+      "id": 94,
+      "product_code": "LK/51/600MM",
+      "mrp": 25000,
+      "category": "hanging_lights",
+      "category_label": "Hanging Lights",
+      "image": "LK51-600MM.jpg"
+    },
+    {
+      "id": 95,
+      "product_code": "MG A-6L 6 Light",
+      "mrp": 24000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights"
+    },
+    {
+      "id": 96,
+      "product_code": "MG A-6L 8 Light",
+      "mrp": 28000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights"
+    },
+    {
+      "id": 97,
+      "product_code": "MG A-6L 10 Light",
+      "mrp": 32000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights"
+    },
+    {
+      "id": 98,
+      "product_code": "MG A-6L 12 Light",
+      "mrp": 36000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights"
+    },
+    {
+      "id": 99,
+      "product_code": "French Chandelier 450MM",
+      "mrp": 15000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights"
+    },
+    {
+      "id": 100,
+      "product_code": "TES 8L DINING",
+      "mrp": 14000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "image": "TES-8L-DINING.jpg"
+    },
+    {
+      "id": 101,
+      "product_code": "MG10",
+      "mrp": 12000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "image": "MG10.jpg"
+    },
+    {
+      "id": 102,
+      "product_code": "KX110/GD",
+      "mrp": 14000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "image": "KX110-GD.jpg"
+    },
+    {
+      "id": 103,
+      "product_code": "Midea 3Ps Set LED 3000K",
+      "mrp": 9000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights"
+    },
+    {
+      "id": 104,
+      "product_code": "7023-3",
+      "mrp": 11000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "image": "7023-3.jpg"
+    },
+    {
+      "id": 105,
+      "product_code": "HANGING LIGHT ALUMINIUM MG88",
+      "mrp": 3000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights"
+    },
+    {
+      "id": 106,
+      "product_code": "PH031 DD",
+      "mrp": 2800,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "image": "PH031-DD.jpg"
+    },
+    {
+      "id": 107,
+      "product_code": "ORT001",
+      "mrp": 900,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "details": {
+        "specs": "5+5W WH+WW"
+      }
+    },
+    {
+      "id": 108,
+      "product_code": "ORT002",
+      "mrp": 900,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "details": {
+        "specs": "5+5W WH+WW"
+      }
+    },
+    {
+      "id": 109,
+      "product_code": "ORT003",
+      "mrp": 1000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "details": {
+        "specs": "5+5W WH+WW"
+      }
+    },
+    {
+      "id": 110,
+      "product_code": "ORT004",
+      "mrp": 1000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "details": {
+        "specs": "5+5W WH+WW"
+      }
+    },
+    {
+      "id": 111,
+      "product_code": "LX5275",
+      "mrp": 3500,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "image": "LX5275.jpg"
+    },
+    {
+      "id": 112,
+      "product_code": "LW5267/GD",
+      "mrp": 3500,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "image": "LW5267-GD.jpg"
+    },
+    {
+      "id": 113,
+      "product_code": "BB4402-B",
+      "mrp": 4000,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights",
+      "image": "BB4402-B.jpg"
+    },
+    {
+      "id": 114,
+      "product_code": "Waterproof Dome 15W",
+      "mrp": 900,
+      "category": "hanging_dome_lights",
+      "category_label": "Hanging & Dome Lights"
+    },
+    {
+      "id": 115,
+      "product_code": "HJA3830-9LIGHT",
+      "mrp": 35000,
+      "category": "chandeliers",
+      "category_label": "Chandeliers"
+    },
+    {
+      "id": 116,
+      "product_code": "0625 91783 500X1800MM",
+      "mrp": 95000,
+      "category": "chandeliers",
+      "category_label": "Chandeliers"
+    },
+    {
+      "id": 117,
+      "product_code": "6007-500X1800MM",
+      "mrp": 100000,
+      "category": "chandeliers",
+      "category_label": "Chandeliers"
+    },
+    {
+      "id": 118,
+      "product_code": "G91-100",
+      "mrp": 4000,
+      "category": "ceiling_fix_chandelier",
+      "category_label": "Ceiling Fix Chandelier",
+      "image": "G91-100.jpg"
+    },
+    {
+      "id": 119,
+      "product_code": "2206/200MM",
+      "mrp": 7800,
+      "category": "ceiling_fix_chandelier",
+      "category_label": "Ceiling Fix Chandelier",
+      "image": "2206-200MM.jpg"
+    },
+    {
+      "id": 120,
+      "product_code": "2203/200MM",
+      "mrp": 7800,
+      "category": "ceiling_fix_chandelier",
+      "category_label": "Ceiling Fix Chandelier",
+      "image": "2203-200MM.jpg"
+    },
+    {
+      "id": 121,
+      "product_code": "1133-300MM",
+      "mrp": 8000,
+      "category": "ceiling_fix_chandelier",
+      "category_label": "Ceiling Fix Chandelier",
+      "image": "1133-300MM.jpg"
+    },
+    {
+      "id": 122,
+      "product_code": "1123-300MM",
+      "mrp": 8000,
+      "category": "ceiling_fix_chandelier",
+      "category_label": "Ceiling Fix Chandelier",
+      "image": "1123-300MM.jpg"
+    },
+    {
+      "id": 123,
+      "product_code": "1116-300MM",
+      "mrp": 9000,
+      "category": "ceiling_fix_chandelier",
+      "category_label": "Ceiling Fix Chandelier",
+      "image": "1116-300MM.jpg"
+    },
+    {
+      "id": 124,
+      "product_code": "1129-300MM",
+      "mrp": 10000,
+      "category": "ceiling_fix_chandelier",
+      "category_label": "Ceiling Fix Chandelier",
+      "image": "1129-300MM.jpg"
+    },
+    {
+      "id": 125,
+      "product_code": "ZQ15",
+      "mrp": 2500,
+      "category": "ceiling_fix_chandelier",
+      "category_label": "Ceiling Fix Chandelier",
+      "image": "ZQ15.jpg"
+    },
+    {
+      "id": 126,
+      "product_code": "LK585/600MM",
+      "mrp": 32000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers",
+      "image": "LK585-600MM.jpg"
+    },
+    {
+      "id": 127,
+      "product_code": "LK906/600MM",
+      "mrp": 30000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 128,
+      "product_code": "LK906/800MM",
+      "mrp": 36000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 129,
+      "product_code": "LK905/600MM",
+      "mrp": 22000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 130,
+      "product_code": "LK905/800MM",
+      "mrp": 28000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 131,
+      "product_code": "LK902/400MM",
+      "mrp": 11000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 132,
+      "product_code": "LK902/500MM",
+      "mrp": 16000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 133,
+      "product_code": "LK902/600MM",
+      "mrp": 21000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 134,
+      "product_code": "LK902/800MM",
+      "mrp": 32000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 135,
+      "product_code": "CN1004/600MM",
+      "mrp": 21000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 136,
+      "product_code": "CN1004/800x300MM",
+      "mrp": 24000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 137,
+      "product_code": "LK904/800MM",
+      "mrp": 32000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers",
+      "image": "LK904-800MM.jpg"
+    },
+    {
+      "id": 138,
+      "product_code": "CN2604/300MM",
+      "mrp": 7800,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 139,
+      "product_code": "CN2604/500MM",
+      "mrp": 16000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 140,
+      "product_code": "6883/500MM",
+      "mrp": 18000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 141,
+      "product_code": "6883/600MM",
+      "mrp": 22000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 142,
+      "product_code": "8898/300MM E14",
+      "mrp": 8000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 143,
+      "product_code": "D38/500MM",
+      "mrp": 20000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers",
+      "image": "D38-500MM.jpg"
+    },
+    {
+      "id": 144,
+      "product_code": "S732/400MM",
+      "mrp": 12000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 145,
+      "product_code": "S732/500MM",
+      "mrp": 16000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 146,
+      "product_code": "S732/600MM",
+      "mrp": 21000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 147,
+      "product_code": "LK573/600MM",
+      "mrp": 32000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers",
+      "image": "LK573-600MM.jpg"
+    },
+    {
+      "id": 148,
+      "product_code": "S760/300MM",
+      "mrp": 8000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 149,
+      "product_code": "S760/400MM",
+      "mrp": 12000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 150,
+      "product_code": "S760/600MM",
+      "mrp": 21000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 151,
+      "product_code": "CN4739/400MM",
+      "mrp": 18000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 152,
+      "product_code": "CN4739/500MM",
+      "mrp": 26000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 153,
+      "product_code": "CN4739/600MM",
+      "mrp": 32000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 154,
+      "product_code": "CN4736/400MM",
+      "mrp": 18000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 155,
+      "product_code": "CN4736/500MM",
+      "mrp": 26000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 156,
+      "product_code": "CN4736/600MM",
+      "mrp": 32000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 157,
+      "product_code": "67105/600MM",
+      "mrp": 38000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 158,
+      "product_code": "67105/800MM",
+      "mrp": 49000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 159,
+      "product_code": "10600/600MM",
+      "mrp": 38000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 160,
+      "product_code": "10600/800MM",
+      "mrp": 49000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 161,
+      "product_code": "10511/600MM",
+      "mrp": 38000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 162,
+      "product_code": "10511/800MM",
+      "mrp": 49000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 163,
+      "product_code": "DX6021-6/500x1500MM",
+      "mrp": 52000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 164,
+      "product_code": "6002-7/600x800MM",
+      "mrp": 42000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 165,
+      "product_code": "6002-7/500x1000MM",
+      "mrp": 40000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 166,
+      "product_code": "2304/600x950MM",
+      "mrp": 45000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 167,
+      "product_code": "91529/800x1200MM",
+      "mrp": 100000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 168,
+      "product_code": "2313/1200x1800MM",
+      "mrp": 350000,
+      "category": "crystal_chandeliers",
+      "category_label": "Crystal Chandeliers"
+    },
+    {
+      "id": 169,
+      "product_code": "DIVINE 2037 6 Light",
+      "mrp": 24000,
+      "category": "candle_light",
+      "category_label": "Candle Light"
+    },
+    {
+      "id": 170,
+      "product_code": "DIVINE 2037 8 Light",
+      "mrp": 30000,
+      "category": "candle_light",
+      "category_label": "Candle Light"
+    },
+    {
+      "id": 171,
+      "product_code": "DIVINE 2037 8+4 Light 2 Step",
+      "mrp": 45000,
+      "category": "candle_light",
+      "category_label": "Candle Light"
+    },
+    {
+      "id": 172,
+      "product_code": "DIVINE 2037 10+5 Light 2 Step",
+      "mrp": 60000,
+      "category": "candle_light",
+      "category_label": "Candle Light"
+    },
+    {
+      "id": 173,
+      "product_code": "Touch LED Mirror 28inch",
+      "mrp": 16000,
+      "category": "mirror_lights",
+      "category_label": "Mirror & Mirror Glass LED"
+    },
+    {
+      "id": 174,
+      "product_code": "4L-20W Mirror Light",
+      "mrp": 5000,
+      "category": "mirror_lights",
+      "category_label": "Mirror & Mirror Glass LED"
+    },
+    {
+      "id": 175,
+      "product_code": "3L-15W Mirror Light",
+      "mrp": 4500,
+      "category": "mirror_lights",
+      "category_label": "Mirror & Mirror Glass LED"
+    },
+    {
+      "id": 176,
+      "product_code": "20W SS Mirror Light",
+      "mrp": 4000,
+      "category": "mirror_lights",
+      "category_label": "Mirror & Mirror Glass LED"
+    },
+    {
+      "id": 177,
+      "product_code": "9710-L",
+      "mrp": 6800,
+      "category": "mirror_lights",
+      "category_label": "Mirror & Mirror Glass LED",
+      "image": "9710-L.jpg"
+    },
+    {
+      "id": 178,
+      "product_code": "073-5/500MM",
+      "mrp": 8500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 179,
+      "product_code": "077-1/500MM",
+      "mrp": 8500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 180,
+      "product_code": "303-1/500MM",
+      "mrp": 8500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 181,
+      "product_code": "273-3/500MM",
+      "mrp": 8500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 182,
+      "product_code": "362-5/500MM",
+      "mrp": 8500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 183,
+      "product_code": "701/2C/13inch",
+      "mrp": 3600,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 184,
+      "product_code": "H01/400MM",
+      "mrp": 4500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights",
+      "image": "H01-400MM.jpg"
+    },
+    {
+      "id": 185,
+      "product_code": "2336/400MM",
+      "mrp": 4500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights",
+      "image": "2336-400MM.jpg"
+    },
+    {
+      "id": 186,
+      "product_code": "KX010 GD/500",
+      "mrp": 8500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 187,
+      "product_code": "XL8393/550x550MM",
+      "mrp": 10500,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 188,
+      "product_code": "XL8372/700x500MM",
+      "mrp": 11000,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 189,
+      "product_code": "G91-G100/550x450MM",
+      "mrp": 8000,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 190,
+      "product_code": "S202 400MM",
+      "mrp": 7000,
+      "category": "dome_lights",
+      "category_label": "Dome Lights",
+      "details": {
+        "specs": "36W+36W Dual Color LED"
+      },
+      "image": "S202-400MM.jpg"
+    },
+    {
+      "id": 191,
+      "product_code": "S204 400MM",
+      "mrp": 7000,
+      "category": "dome_lights",
+      "category_label": "Dome Lights",
+      "details": {
+        "specs": "36W+36W Dual Color LED"
+      },
+      "image": "S204-400MM.jpg"
+    },
+    {
+      "id": 192,
+      "product_code": "S205 400MM",
+      "mrp": 7000,
+      "category": "dome_lights",
+      "category_label": "Dome Lights",
+      "details": {
+        "specs": "36W+36W Dual Color LED"
+      },
+      "image": "S205-400MM.jpg"
+    },
+    {
+      "id": 193,
+      "product_code": "S211 400MM",
+      "mrp": 6000,
+      "category": "dome_lights",
+      "category_label": "Dome Lights",
+      "details": {
+        "specs": "36W+36W Dual Color LED"
+      },
+      "image": "S211-400MM.jpg"
+    },
+    {
+      "id": 194,
+      "product_code": "Sensor Dome Light 12W 6000K 400MM",
+      "mrp": 4000,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 195,
+      "product_code": "Sensor 12W Dome Light 6000K",
+      "mrp": 1100,
+      "category": "dome_lights",
+      "category_label": "Dome Lights"
+    },
+    {
+      "id": 196,
+      "product_code": "FY-511",
+      "mrp": 1800,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "FY-511.jpg"
+    },
+    {
+      "id": 197,
+      "product_code": "GN07 RGB",
+      "mrp": 1350,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN07-RGB.jpg"
+    },
+    {
+      "id": 198,
+      "product_code": "GN1",
+      "mrp": 1800,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN1.jpg"
+    },
+    {
+      "id": 199,
+      "product_code": "GN A045/1",
+      "mrp": 900,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN-A045-1.jpg"
+    },
+    {
+      "id": 200,
+      "product_code": "5015X",
+      "mrp": 1900,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "5015X.jpg"
+    },
+    {
+      "id": 201,
+      "product_code": "GN-ML32",
+      "mrp": 1900,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN-ML32.jpg"
+    },
+    {
+      "id": 202,
+      "product_code": "GN001 Aluminum 10W",
+      "mrp": 2400,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 203,
+      "product_code": "GN205",
+      "mrp": 2200,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN205.jpg"
+    },
+    {
+      "id": 204,
+      "product_code": "GN-A045/2",
+      "mrp": 1200,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN-A045-2.jpg"
+    },
+    {
+      "id": 205,
+      "product_code": "GN02/2",
+      "mrp": 900,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN02-2.jpg"
+    },
+    {
+      "id": 206,
+      "product_code": "GN-320/4",
+      "mrp": 1100,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN-320-4.jpg"
+    },
+    {
+      "id": 207,
+      "product_code": "MINI SPOT 3W",
+      "mrp": 800,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "MINI-SPOT-3W.jpg"
+    },
+    {
+      "id": 208,
+      "product_code": "SPIKER 3W 3000K",
+      "mrp": 800,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 209,
+      "product_code": "SPIKER 5W 3000K",
+      "mrp": 900,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 210,
+      "product_code": "SPIKER 5W RGB",
+      "mrp": 1100,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 211,
+      "product_code": "SPIKER 12W 3000K",
+      "mrp": 1400,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 212,
+      "product_code": "DIE CASTING BLACK/GREY 18W",
+      "mrp": 3600,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "details": {
+        "details": "Aluminium, 10MTR Range"
+      }
+    },
+    {
+      "id": 213,
+      "product_code": "50M-50 HOLDER",
+      "mrp": 11000,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 214,
+      "product_code": "50M-100 HOLDER",
+      "mrp": 15000,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 215,
+      "product_code": "10M-10 HOLDER",
+      "mrp": 2400,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 216,
+      "product_code": "10M-20 HOLDER",
+      "mrp": 3200,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 217,
+      "product_code": "1W Amber Bulb",
+      "mrp": 100,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 218,
+      "product_code": "12W 3000K",
+      "mrp": 3000,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 219,
+      "product_code": "15W Gold",
+      "mrp": 4000,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 220,
+      "product_code": "18W Gold",
+      "mrp": 4500,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 221,
+      "product_code": "String Light 20M-20 Bulb LED",
+      "mrp": 3200,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 222,
+      "product_code": "MD-23194-6",
+      "mrp": 2200,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "MD-23194-6.jpg"
+    },
+    {
+      "id": 223,
+      "product_code": "MD-23463 BLACK",
+      "mrp": 2800,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 224,
+      "product_code": "MD-23463 GREY",
+      "mrp": 2900,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 225,
+      "product_code": "SOLAR OUTDOOR",
+      "mrp": 1800,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "SOLAR-OUTDOOR.jpg"
+    },
+    {
+      "id": 226,
+      "product_code": "MD-23244-S BLACK",
+      "mrp": 2250,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 227,
+      "product_code": "MD-23244-S GREY",
+      "mrp": 2400,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 228,
+      "product_code": "SOLAR WALL LIGHT 15W",
+      "mrp": 1100,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 229,
+      "product_code": "Hibay 150W 6000K",
+      "mrp": 2400,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights"
+    },
+    {
+      "id": 230,
+      "product_code": "FY-513F Aluminium",
+      "mrp": 1900,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "details": {
+        "size": "100x110x134MM",
+        "power": "2x1W+2x5W"
+      }
+    },
+    {
+      "id": 231,
+      "product_code": "FY-512F Aluminium",
+      "mrp": 1900,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "details": {
+        "size": "100x91x134MM",
+        "power": "2x1W+2x5W"
+      }
+    },
+    {
+      "id": 232,
+      "product_code": "FY-78-2 Aluminium",
+      "mrp": 2800,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "details": {
+        "size": "100x110x134MM",
+        "power": "2x1W+2x5W"
+      }
+    },
+    {
+      "id": 233,
+      "product_code": "FY-173-4 Aluminium",
+      "mrp": 1700,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "details": {
+        "size": "43x108x98MM",
+        "power": "4W"
+      }
+    },
+    {
+      "id": 234,
+      "product_code": "FY-16S-BK Aluminium",
+      "mrp": 1800,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "details": {
+        "size": "160x50x45MM",
+        "power": "6W"
+      }
+    },
+    {
+      "id": 235,
+      "product_code": "FY-119-4 Aluminium",
+      "mrp": 1750,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "details": {
+        "size": "120x80x55MM",
+        "power": "8W"
+      }
+    },
+    {
+      "id": 236,
+      "product_code": "GN07 3000K",
+      "mrp": 1350,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "GN07-3000K.jpg"
+    },
+    {
+      "id": 237,
+      "product_code": "FY-123-4",
+      "mrp": 1000,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "FY-123-4.jpg"
+    },
+    {
+      "id": 238,
+      "product_code": "24W 4 Feet",
+      "mrp": 4000,
+      "category": "wall_exterior_lights",
+      "category_label": "Wall Exterior Lights",
+      "image": "24W-4FEET.jpg"
+    },
+    {
+      "id": 239,
+      "product_code": "3x3 PVC Foot Light White/Grey/Gold",
+      "mrp": 750,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 240,
+      "product_code": "3x4 Weatherproof Socket",
+      "mrp": 1200,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 241,
+      "product_code": "3x4 Steel Ground Socket",
+      "mrp": 3000,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 242,
+      "product_code": "TY3804 BK",
+      "mrp": 1100,
+      "category": "foot_lights",
+      "category_label": "Foot Lights",
+      "image": "TY3804-BK.jpg"
+    },
+    {
+      "id": 243,
+      "product_code": "PVC 5W Sensor 3x3",
+      "mrp": 1000,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 244,
+      "product_code": "3x4",
+      "mrp": 700,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 245,
+      "product_code": "HOTEL SMART KEY 3x3",
+      "mrp": 1800,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 246,
+      "product_code": "Aluminium 5W 3x3",
+      "mrp": 900,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 247,
+      "product_code": "BMS009A/B Inbuilt Box 4 Module",
+      "mrp": 1100,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 248,
+      "product_code": "Aluminium 7W 3x5",
+      "mrp": 1800,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 249,
+      "product_code": "Aluminium 5W Sensor 3x3",
+      "mrp": 1800,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 250,
+      "product_code": "Aluminium 7W 3x8",
+      "mrp": 2000,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 251,
+      "product_code": "Stainless Steel 7W 3x5",
+      "mrp": 900,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 252,
+      "product_code": "TY-3805 BK 3x8",
+      "mrp": 1300,
+      "category": "foot_lights",
+      "category_label": "Foot Lights"
+    },
+    {
+      "id": 253,
+      "product_code": "TY8808-16/200 BLACK/GOLD",
+      "mrp": 2700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 254,
+      "product_code": "TY3609-200 GOLD",
+      "mrp": 2700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 255,
+      "product_code": "TY8808-26 GOLD",
+      "mrp": 2700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 256,
+      "product_code": "TY8808-4 BLACK/GOLD",
+      "mrp": 2900,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 257,
+      "product_code": "209-344 Antique Wall Light",
+      "mrp": 9800,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 258,
+      "product_code": "TY8808-65 BLACK",
+      "mrp": 4000,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 259,
+      "product_code": "TY8808-21 GOLD",
+      "mrp": 2900,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 260,
+      "product_code": "FY-300 12x12 inch BLACK",
+      "mrp": 11500,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 261,
+      "product_code": "FY-300 10x6 inch BLACK",
+      "mrp": 7000,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 262,
+      "product_code": "TY-1302S/W BLACK/GOLD",
+      "mrp": 1700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 263,
+      "product_code": "TY1802S/W BLACK/GOLD",
+      "mrp": 1700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 264,
+      "product_code": "TY0602S/W",
+      "mrp": 1700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights",
+      "image": "TY0602SW.jpg"
+    },
+    {
+      "id": 265,
+      "product_code": "TY-2402S",
+      "mrp": 1700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights",
+      "image": "TY-2402S.jpg"
+    },
+    {
+      "id": 266,
+      "product_code": "TY-2403S/S",
+      "mrp": 1700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 267,
+      "product_code": "TY-1803S-B BLACK/GOLD",
+      "mrp": 1700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 268,
+      "product_code": "TY-2403S/S BLACK/GOLD",
+      "mrp": 1700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 269,
+      "product_code": "TY-1803S/S BLACK/GOLD",
+      "mrp": 1700,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 270,
+      "product_code": "BOLLARD E27 500MM",
+      "mrp": 4500,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 271,
+      "product_code": "MG BOLLARD 500MM",
+      "mrp": 5000,
+      "category": "gate_lights",
+      "category_label": "Gate Lights"
+    },
+    {
+      "id": 272,
+      "product_code": "TY1305 3-LIGHTS",
+      "mrp": 20000,
+      "category": "pole_lights",
+      "category_label": "Pole Lights",
+      "details": {
+        "details": "2.3MTR, Black & Gold"
+      }
+    },
+    {
+      "id": 273,
+      "product_code": "MG11",
+      "mrp": 1800,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "MG11.jpg"
+    },
+    {
+      "id": 274,
+      "product_code": "MTLD165",
+      "mrp": 9500,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "MTLD165.jpg"
+    },
+    {
+      "id": 275,
+      "product_code": "8235",
+      "mrp": 3000,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "8235.jpg"
+    },
+    {
+      "id": 276,
+      "product_code": "SD001",
+      "mrp": 2500,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "SD001.jpg"
+    },
+    {
+      "id": 277,
+      "product_code": "TY-1006",
+      "mrp": 3000,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "TY-1006.jpg"
+    },
+    {
+      "id": 278,
+      "product_code": "8688",
+      "mrp": 4800,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "8688.jpg"
+    },
+    {
+      "id": 279,
+      "product_code": "8233",
+      "mrp": 3000,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "8233.jpg"
+    },
+    {
+      "id": 280,
+      "product_code": "XL8224/1500MM",
+      "mrp": 12000,
+      "category": "table_lamp",
+      "category_label": "Table Lamp"
+    },
+    {
+      "id": 281,
+      "product_code": "XL8230 H-1550MM",
+      "mrp": 12000,
+      "category": "table_lamp",
+      "category_label": "Table Lamp"
+    },
+    {
+      "id": 282,
+      "product_code": "8512",
+      "mrp": 2500,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "8512.jpg"
+    },
+    {
+      "id": 283,
+      "product_code": "CY/XMY002/3000K",
+      "mrp": 1600,
+      "category": "table_lamp",
+      "category_label": "Table Lamp"
+    },
+    {
+      "id": 284,
+      "product_code": "RTD01",
+      "mrp": 2000,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "RTD01.jpg"
+    },
+    {
+      "id": 285,
+      "product_code": "8202",
+      "mrp": 3000,
+      "category": "table_lamp",
+      "category_label": "Table Lamp",
+      "image": "8202.jpg"
+    },
+    {
+      "id": 286,
+      "product_code": "L76",
+      "mrp": 13500,
+      "category": "floor_lamp",
+      "category_label": "Floor Lamp"
+    },
+    {
+      "id": 287,
+      "product_code": "4 Feet 4000K 3 Feet",
+      "mrp": 4000,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 288,
+      "product_code": "4 Feet 4000K 4 Feet",
+      "mrp": 5000,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 289,
+      "product_code": "4 Feet 4000K MRP 1800",
+      "mrp": 1800,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 290,
+      "product_code": "2x2 60W",
+      "mrp": 3000,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 291,
+      "product_code": "1x4 50W",
+      "mrp": 4000,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 292,
+      "product_code": "Table Socket 8 Module",
+      "mrp": 12000,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 293,
+      "product_code": "Spot Light YBC-7206-3000K 5W",
+      "mrp": 3000,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 294,
+      "product_code": "Spot Light YBC-7003-3000K 5W",
+      "mrp": 4500,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 295,
+      "product_code": "YBC-3214 BK 3000K 10W",
+      "mrp": 2200,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 296,
+      "product_code": "YBC-3214 BK 3000K 20W",
+      "mrp": 3400,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 297,
+      "product_code": "YBC-6216 BK/WH 5W",
+      "mrp": 1300,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 298,
+      "product_code": "YBC-6216 BK/WH 10W",
+      "mrp": 1500,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 299,
+      "product_code": "YBC-6216 BK/WH 15W",
+      "mrp": 1800,
+      "category": "commercial_light",
+      "category_label": "Commercial Light"
+    },
+    {
+      "id": 300,
+      "product_code": "GU-10-7W W/W",
+      "mrp": 300,
+      "category": "bulbs",
+      "category_label": "Bulbs"
+    },
+    {
+      "id": 301,
+      "product_code": "E14C 35 4W",
+      "mrp": 160,
+      "category": "bulbs",
+      "category_label": "Bulbs",
+      "image": "E14C-35-4W.jpg"
+    },
+    {
+      "id": 302,
+      "product_code": "S114 Bulb 1W",
+      "mrp": 100,
+      "category": "bulbs",
+      "category_label": "Bulbs"
+    },
+    {
+      "id": 303,
+      "product_code": "G45 4W",
+      "mrp": 160,
+      "category": "bulbs",
+      "category_label": "Bulbs",
+      "image": "G45-4W.jpg"
+    },
+    {
+      "id": 304,
+      "product_code": "6+6W E14 3 Color",
+      "mrp": 160,
+      "category": "bulbs",
+      "category_label": "Bulbs"
+    },
+    {
+      "id": 305,
+      "product_code": "G9 4W",
+      "mrp": 200,
+      "category": "bulbs",
+      "category_label": "Bulbs",
+      "image": "G9-4W.jpg"
+    },
+    {
+      "id": 306,
+      "product_code": "E14 6W Heavy",
+      "mrp": 300,
+      "category": "bulbs",
+      "category_label": "Bulbs"
+    },
+    {
+      "id": 307,
+      "product_code": "G4 COB 3W",
+      "mrp": 300,
+      "category": "bulbs",
+      "category_label": "Bulbs",
+      "image": "G4-COB-3W.jpg"
+    },
+    {
+      "id": 308,
+      "product_code": "G4 COB 6W",
+      "mrp": 450,
+      "category": "bulbs",
+      "category_label": "Bulbs",
+      "image": "G4-COB-6W.jpg"
+    },
+    {
+      "id": 309,
+      "product_code": "3x3 Concil Box",
+      "mrp": 750,
+      "category": "socket_box",
+      "category_label": "IP66 Socket Box"
+    },
+    {
+      "id": 310,
+      "product_code": "3x5 SF Box",
+      "mrp": 1750,
+      "category": "socket_box",
+      "category_label": "IP66 Socket Box",
+      "image": "3X5-SF-BOX.jpg"
+    },
+    {
+      "id": 311,
+      "product_code": "3x3 SF Box",
+      "mrp": 950,
+      "category": "socket_box",
+      "category_label": "IP66 Socket Box",
+      "image": "3X3-SF-BOX.jpg"
+    },
+    {
+      "id": 312,
+      "product_code": "3x5 Concil Box",
+      "mrp": 1300,
+      "category": "socket_box",
+      "category_label": "IP66 Socket Box"
+    },
+    {
+      "id": 313,
+      "product_code": "3x8 Concil Box",
+      "mrp": 820,
+      "category": "socket_box",
+      "category_label": "IP66 Socket Box"
+    },
+    {
+      "id": 314,
+      "product_code": "7385 Wooden Design 48inch",
+      "mrp": 26000,
+      "category": "fans",
+      "category_label": "Fans"
+    },
+    {
+      "id": 315,
+      "product_code": "3512 Wooden Design 46inch",
+      "mrp": 20000,
+      "category": "fans",
+      "category_label": "Fans"
+    },
+    {
+      "id": 316,
+      "product_code": "8877 Wooden Design 48inch",
+      "mrp": 16000,
+      "category": "fans",
+      "category_label": "Fans"
+    },
+    {
+      "id": 317,
+      "product_code": "91522/600x1800MM",
+      "mrp": 90000,
+      "category": "decorative_lights",
+      "category_label": "Decorative Lights"
+    },
+    {
+      "id": 318,
+      "product_code": "91571/700x2100MM",
+      "mrp": 125000,
+      "category": "decorative_lights",
+      "category_label": "Decorative Lights"
+    }
+  ]
+}
