@@ -2,9 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import ProductsPage from './pages/ProductsPage.jsx'
+
+const isProductsPage = window.location.pathname.startsWith('/products')
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    {isProductsPage ? <ProductsPage /> : <App />}
   </StrictMode>,
 )
