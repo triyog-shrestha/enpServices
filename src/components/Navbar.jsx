@@ -1,15 +1,20 @@
 import { useEffect, useState } from 'react'
+import logo from '../assets/logo.png'
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const isProductsPage = window.location.pathname.startsWith('/products')
 
-  const links = [
-    { label: 'About', href: '#home' },
-    { label: 'Services', href: '#services' },
-    { label: 'Why Us', href: '#why' },
-    { label: 'Cart', href: '#book' },
-  ]
+  const links = isProductsPage
+    ? [{ label: 'Back to Home', href: '/#home' }]
+    : [
+        { label: 'About', href: '#home' },
+        { label: 'Services', href: '#services' },
+        { label: 'Products', href: '#our-items' },
+        { label: 'Why Us', href: '#why' },
+        { label: 'Cart', href: '#book' },
+      ]
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 8)
@@ -52,10 +57,19 @@ function Navbar() {
 
   return (
     <header className={`site-navbar${isScrolled ? ' is-scrolled' : ''}${isMenuOpen ? ' menu-open' : ''}`}>
-      <a className="brand" href="#home" aria-label="E&P Services home">
-        <span className="brand-logo" aria-hidden="true">
-          S
-        </span>
+      <a
+        className="brand"
+        href="#"
+        aria-label="E&P Services home"
+        onClick={(e) => {
+          e.preventDefault()
+          setIsMenuOpen(false)
+          if (typeof window !== 'undefined') {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          }
+        }}
+      >
+        <img src={logo} alt="E&P Services" className="brand-logo" />
         <span className="brand-text">E&P SERVICES</span>
       </a>
 
