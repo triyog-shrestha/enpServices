@@ -24,7 +24,13 @@ export function OurItems({ cartItems, addToCart, onRequestAdd }) {
           <button className="scroll-btn" type="button" onClick={() => scrollTrack(1)} aria-label="Scroll right">
             <span aria-hidden="true">{'>'}</span>
           </button>
-          <button className="see-more-btn" type="button" onClick={() => { window.location.href = '/products' }}>
+          <button
+            className="see-more-btn"
+            type="button"
+            onClick={() => {
+              window.location.href = `${import.meta.env.BASE_URL}products`
+            }}
+          >
             See All
           </button>
         </div>

@@ -1,19 +1,17 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const location = useLocation()
-  const isProductsPage = location.pathname.startsWith('/products')
+  const isProductsPage = window.location.pathname.startsWith(`${import.meta.env.BASE_URL}products`)
 
   const links = isProductsPage
-    ? [{ label: 'Back to Home', to: '/' }]
+    ? [{ label: 'Back to Home', href: `${import.meta.env.BASE_URL}#home` }]
     : [
         { label: 'About', href: '#home' },
         { label: 'Services', href: '#services' },
-        { label: 'Products', to: '/products' },
+        { label: 'Products', href: '#our-items' },
         { label: 'Why Us', href: '#why' },
         { label: 'Cart', href: '#book' },
       ]
@@ -90,15 +88,9 @@ function Navbar() {
 
       <nav className={`nav-links${isMenuOpen ? ' is-open' : ''}`} id="primary-navigation" aria-label="primary">
         {links.map((link) => (
-          link.to ? (
-            <Link key={link.label} to={link.to} onClick={() => setIsMenuOpen(false)}>
-              {link.label}
-            </Link>
-          ) : (
-            <a key={link.label} href={link.href} onClick={() => setIsMenuOpen(false)}>
-              {link.label}
-            </a>
-          )
+          <a key={link.label} href={link.href} onClick={() => setIsMenuOpen(false)}>
+            {link.label}
+          </a>
         ))}
       </nav>
 

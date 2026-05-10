@@ -3,15 +3,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+
+const isProductsPage = window.location.pathname.startsWith(`${import.meta.env.BASE_URL}products`)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/products" element={<ProductsPage />} />
-      </Routes>
-    </HashRouter>
+    {isProductsPage ? <ProductsPage /> : <App />}
   </StrictMode>,
 )
