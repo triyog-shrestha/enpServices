@@ -1,7 +1,7 @@
 import './styles/site.css'
 import Navbar from './components/Navbar.jsx'
 import { Hero } from './components/Hero.jsx'
-import { PremiumServices } from './components/PremiumServices.jsx'
+import { MeetOurDirector } from './components/MeetOurDirector.jsx'
 import { FeaturedServices } from './components/FeaturedServices.jsx'
 import { OurItems } from './components/OurItems.jsx'
 import QuantityModal from './components/QuantityModal.jsx'
@@ -63,7 +63,7 @@ function App() {
 
           <div className="wave" aria-hidden="true" />
 
-          <PremiumServices />
+          <MeetOurDirector />
 
           <FeaturedServices cartItems={cartItems} addToCart={addToCart} />
 

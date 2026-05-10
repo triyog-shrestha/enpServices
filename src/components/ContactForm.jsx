@@ -9,8 +9,8 @@ export function ContactForm({ cartItems, removeFromCart, clearCart, totalCost })
       <h2>Book a Technical Expert</h2>
       <p>Fill out the form and we will assign our nearest technician to your location.</p>
       <ul className="contact-list">
-        <li>Office: Imadole, Lalitpur</li>
-        <li>+977 9801696574</li>
+        <li>Mahalaxmi-4, Lalitpur</li>
+        <li>+977 9841082723</li>
         <li>support@epservices.help</li>
       </ul>
       <div className="cart-panel" aria-live="polite">

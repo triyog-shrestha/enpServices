@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.jpg'
 export function Hero() {
   return (
     <section className="hero block fade-in" id="home">

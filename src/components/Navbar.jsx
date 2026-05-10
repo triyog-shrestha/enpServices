@@ -1,17 +1,19 @@
 import { useEffect, useState } from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.jpg'
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const isProductsPage = window.location.pathname.startsWith(`${import.meta.env.BASE_URL}products`)
-
+  
+  const isProductsPage = window.location.pathname.includes('products')
+  
   const links = isProductsPage
-    ? [{ label: 'Back to Home', href: `${import.meta.env.BASE_URL}#home` }]
+    ? [{ label: 'Go Back', href: `${import.meta.env.BASE_URL}` }]
     : [
-        { label: 'About', href: '#home' },
-        { label: 'Services', href: '#services' },
-        { label: 'Products', href: '#our-items' },
+        { label: 'Home', href: `${import.meta.env.BASE_URL}#home` },
+        { label: 'About', href: `${import.meta.env.BASE_URL}#services` },
+        { label: 'Services', href: `${import.meta.env.BASE_URL}#featured-services` },
+        { label: 'Products', href: `${import.meta.env.BASE_URL}#our-items` },
         { label: 'Why Us', href: '#why' },
         { label: 'Cart', href: '#book' },
       ]

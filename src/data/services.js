@@ -1,4 +1,10 @@
 import heroPlaceholder from '../assets/hero.png'
+import wiringImg from '../assets/featured_services/wiring.jpg'
+import weldingImg from '../assets/featured_services/wielding.jpg'
+import amcImg from '../assets/featured_services/amc.jpg'
+import cnImg from '../assets/featured_services/cn.jpg'
+import plumbingImg from '../assets/featured_services/plumbing.jpg'
+import cctvImg from '../assets/featured_services/cctv.jpg'
 
 export const services = [
   {
@@ -55,39 +61,46 @@ export const stats = [
 
 export const featuredServices = [
   {
-    title: 'Home Wiring Fault Diagnosis',
+    title: 'Building & House Wiring',
     premiumCategory: 'Electrical',
     price: 'Rs 2,500.00',
-    description: 'Complete circuit and wiring fault detection with safety checks for stable home power systems.',
-    image: heroPlaceholder,
+    description: 'Professional electrical wiring installation and maintenance for residential and commercial buildings with safety compliance.',
+    image: wiringImg,
   },
   {
-    title: 'Leak Detection and Pipe Repair',
-    premiumCategory: 'Plumbing',
+    title: 'Welding Services',
+    premiumCategory: 'Welding',
     price: 'Rs 1,500.00',
-    description: 'Quick leak tracing and damaged pipe replacement to restore reliable water flow in your property.',
-    image: heroPlaceholder,
+    description: 'Expert welding services for metal fabrication, repairs, and structural reinforcement with quality assurance.',
+    image: weldingImg,
   },
   {
-    title: 'Deep AC Cleaning and Gas Check',
-    premiumCategory: 'AC',
-    price: 'Rs 650.00 / Unit',
-    description: 'Filter wash, cooling coil cleanup, and refrigerant performance check for efficient air conditioning.',
-    image: heroPlaceholder,
+    title: 'Annual Maintenance Service (AMC)',
+    premiumCategory: 'Maintenance',
+    price: 'Rs 5,000.00',
+    description: 'Comprehensive annual maintenance contracts covering all electrical and plumbing systems with priority support.',
+    image: amcImg,
   },
   {
-    title: 'Home and Office Wi-Fi Setup',
+    title: 'Computer and Networking',
     premiumCategory: 'Networking',
-    price: 'Rs 11,000.00',
-    description: 'Router configuration, coverage optimization, and secure Wi-Fi setup for reliable connectivity.',
-    image: heroPlaceholder,
+    price: 'Rs 3,000.00',
+    description: 'Network setup, computer troubleshooting, and IT infrastructure solutions for homes and offices.',
+    image: cnImg,
   },
   {
-    title: 'Pump and Motor Health Service',
-    premiumCategory: 'Motor Service',
-    price: 'Rs 1,500.00',
-    description: 'Load testing, noise and vibration checks, and preventive maintenance for motors and pumps.',
-    image: heroPlaceholder,
+    title: 'Plumbing Services',
+    premiumCategory: 'Plumbing',
+    price: 'Rs 1,200.00',
+    description: 'Complete plumbing solutions including leak repairs, fixture installation, and pipe maintenance.',
+    image: plumbingImg,
+  },
+  {
+    title: 'CCTV Installation & Maintenance',
+    premiumCategory: 'Security',
+    price: 'Rs 8,000.00',
+    description: 'Professional CCTV system installation, maintenance, and monitoring setup for enhanced security.',
+    image: cctvImg,
   },
 ]
 
