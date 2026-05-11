@@ -1,7 +1,51 @@
+import { useState } from 'react'
+
 export function ContactForm({ cartItems, removeFromCart, clearCart, totalCost }) {
-  const handleSubmit = (event) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [statusMessage, setStatusMessage] = useState('')
+
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    clearCart()
+    setIsSubmitting(true)
+    setStatusMessage('')
+
+    try {
+      const form = event.target
+      const formData = new FormData(form)
+
+      // include only the requested cart fields in submission
+      const cartPayload = (cartItems || []).map((item) => ({
+        product_code: item.title,
+        category_label: item.category,
+        quantity: Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : 1
+      }))
+      formData.set('cart', JSON.stringify(cartPayload))
+      formData.delete('totalCost')
+
+      // ensure a single, trimmed Web3Forms access key is present
+      const rawKey = formData.get('access_key') || 'fe9891ae-f153-4c4c-84cd-ffe22db0306c'
+      const accessKey = String(rawKey).trim()
+      formData.set('access_key', accessKey)
+
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+
+      const data = await res.json()
+
+      if (data.success) {
+        setStatusMessage('Success! Your request has been submitted.')
+        form.reset()
+        clearCart()
+      } else {
+        setStatusMessage(data.message || 'There was an error submitting the form.')
+      }
+    } catch {
+      setStatusMessage('Network error. Please try again later.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -37,22 +81,30 @@ export function ContactForm({ cartItems, removeFromCart, clearCart, totalCost })
           <strong>{totalCost}</strong>
         </div>
       </div>
+
       <form className="booking-form" onSubmit={handleSubmit}>
+        <input type="hidden" name="access_key" value="fe9891ae-f153-4c4c-84cd-ffe22db0306c" />
+
         <label htmlFor="fullName">Full Name</label>
-        <input id="fullName" type="text" placeholder="eg: LeBron James" />
+        <input id="fullName" name="name" type="text" placeholder="eg: LeBron James" required />
+
+        <label htmlFor="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required />
 
         <label htmlFor="phone">Phone Number</label>
-        <input id="phone" type="tel" placeholder="+977" />
+        <input id="phone" name="phone" type="tel" placeholder="+977" />
 
         <label htmlFor="address">Address</label>
-        <input id="address" type="text" placeholder="Tole, Ward No., City, District" />
+        <input id="address" name="address" type="text" placeholder="Tole, Ward No., City, District" />
 
         <label htmlFor="message">Further Instructions:</label>
-        <textarea id="message" rows="3" placeholder="Describe your technical issue..." />
+        <textarea id="message" name="message" rows="3" placeholder="Describe your technical issue..." />
 
-        <button className="btn btn-primary form-btn" type="submit">
-          Request Service
+        <button className="btn btn-primary form-btn" type="submit" disabled={isSubmitting}>
+          {isSubmitting ? 'Sending…' : 'Request Service'}
         </button>
+
+        {statusMessage && <p className="form-status" aria-live="polite">{statusMessage}</p>}
       </form>
     </section>
   )
