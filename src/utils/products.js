@@ -1,7 +1,16 @@
 import productsData from '../assets/products.json'
 
+const productImageModules = import.meta.glob('../assets/product_images/*.{jpg,jpeg,png,webp,gif,svg}', {
+  eager: true,
+  import: 'default',
+})
+
+const productImageLookup = Object.fromEntries(
+  Object.entries(productImageModules).map(([path, image]) => [path.split('/').pop(), image]),
+)
+
 function buildImageUrl(imageName) {
-  return imageName ? new URL(`../assets/product_images/${imageName}`, import.meta.url).href : undefined
+  return imageName ? productImageLookup[imageName] : undefined
 }
 
 function formatPrice(value) {
