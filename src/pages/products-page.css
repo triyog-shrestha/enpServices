@@ -1,3 +1,10 @@
+.products-page {
+  background:
+    radial-gradient(circle at 18% -10%, rgba(78, 165, 255, 0.12), transparent 36%),
+    radial-gradient(circle at 96% 0%, rgba(136, 224, 255, 0.08), transparent 32%),
+    linear-gradient(180deg, #020713 0%, #050e1f 44%, #02060f 100%);
+}
+
 .products-page .products-hero {
   min-height: calc(100vh - 84px);
   display: grid;
@@ -55,9 +62,9 @@
   border-radius: 30px;
   border: 1px solid rgba(149, 194, 255, 0.2);
   background:
-    radial-gradient(circle at 30% 24%, rgba(78, 165, 255, 0.22), transparent 35%),
-    radial-gradient(circle at 72% 76%, rgba(136, 224, 255, 0.12), transparent 40%),
-    linear-gradient(180deg, rgba(11, 30, 67, 0.78), rgba(4, 16, 40, 0.96));
+    radial-gradient(circle at 30% 24%, rgba(78, 165, 255, 0.14), transparent 34%),
+    radial-gradient(circle at 72% 76%, rgba(136, 224, 255, 0.08), transparent 38%),
+    linear-gradient(180deg, rgba(7, 22, 50, 0.92), rgba(2, 10, 24, 0.98));
   box-shadow: inset 0 1px 0 rgba(195, 232, 255, 0.08), 0 18px 40px rgba(1, 8, 24, 0.28);
   display: grid;
   place-items: center;

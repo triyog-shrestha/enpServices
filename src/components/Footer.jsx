@@ -1,20 +1,96 @@
+import {
+  HelpCircle,
+  Home,
+  Mail,
+  MapPin,
+  Phone,
+  ShoppingBag,
+  ShoppingCart,
+  User,
+  Wrench,
+} from 'lucide-react'
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+
+const BASE = import.meta.env.BASE_URL
+
+const CONTACT_ITEMS = [
+  {
+    icon: MapPin,
+    heading: 'Find us',
+    lines: ['Mahalaxmi-4, Lalitpur, Nepal'],
+  },
+  {
+    icon: Phone,
+    heading: 'Call us',
+    lines: ['+977 9841082723', '+977 9843737021'],
+  },
+  {
+    icon: Mail,
+    heading: 'Mail us',
+    lines: ['support@epservices.help'],
+  },
+]
+
+const NAV_LINKS = [
+  { icon: Home, label: 'Home', href: `${BASE}#home` },
+  { icon: Wrench, label: 'Services', href: `${BASE}#featured-services` },
+  { icon: ShoppingBag, label: 'Products', href: `${BASE}#our-items` },
+  { icon: User, label: 'About Us', href: `${BASE}#director` },
+  { icon: HelpCircle, label: 'Why Us', href: `${BASE}#why` },
+  { icon: ShoppingCart, label: 'Cart', href: `${BASE}#book` },
+]
+
+const SOCIAL_LINKS = [
+  { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61587384980299', icon: FaFacebook },
+  { label: 'WhatsApp', href: 'https://wa.me/9779841082723', icon: FaWhatsapp },
+  { label: 'Instagram', href: 'https://www.instagram.com/electrical_plumbing.services/', icon: FaInstagram },
+]
+
 export function Footer() {
   return (
     <footer className="site-footer fade-in">
-      <a className="foot-brand" href="#home">E&P Services</a>
-      <div className="socials" aria-label="social links">
-        <a href="https://www.instagram.com/joshua.budathoki/" target="_blank" rel="noreferrer" aria-label="instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-            <circle cx="12" cy="12" r="4" />
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/joshua.budhathoki" target="_blank" rel="noreferrer" aria-label="facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-          </svg>
-        </a>
+      <div className="footer-top">
+        <div className="footer-contact-grid">
+          {CONTACT_ITEMS.map(({ icon: Icon, heading, lines }) => (
+            <div key={heading} className="footer-contact-item">
+              <Icon className="footer-contact-icon" size={20} aria-hidden="true" />
+              <div>
+                <h3>{heading}</h3>
+                {lines.map((line) => (
+                  <p key={line}>{line}</p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <span className="footer-divider" aria-hidden="true" />
+
+        <div className="footer-bottom-grid">
+
+          <div className="footer-links-block">
+            <h3>Useful Links</h3>
+            <nav className="footer-links" aria-label="Footer navigation">
+              {NAV_LINKS.map(({ icon: Icon, label, href }) => (
+                <a key={label} href={href}>
+                  <Icon size={14} aria-hidden="true" />
+                  {label}
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          <div className="footer-social-block">
+            <h3>Follow us</h3>
+            <div className="socials footer-socials" aria-label="Social media links">
+              {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
+                <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}>
+                  <Icon size={18} aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   )

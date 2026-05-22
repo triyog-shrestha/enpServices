@@ -6,6 +6,7 @@ export function WhyChooseUs() {
     <section className="block why fade-in" id="why">
       <h2>Why Choose E&P Services?</h2>
       <p>We combine industrial reliability with modern technical precision to deliver unmatched service quality.</p>
+      
       <div className="why-grid">
         {reasons.map((item, index) => (
           <article className="why-item" style={{ '--delay': `${index * 80 + 120}ms` }} key={item.title}>

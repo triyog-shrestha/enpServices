@@ -5,15 +5,15 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   
-  const isProductsPage = window.location.pathname.includes('products')
-  
-  const links = isProductsPage
+  const isSubPage = window.location.pathname.includes('products') || window.location.pathname.includes('amc-plans')
+
+  const links = isSubPage
     ? [{ label: 'Go Back', href: `${import.meta.env.BASE_URL}` }]
     : [
         { label: 'Home', href: `${import.meta.env.BASE_URL}#home` },
-        { label: 'About', href: `${import.meta.env.BASE_URL}#services` },
         { label: 'Services', href: `${import.meta.env.BASE_URL}#featured-services` },
         { label: 'Products', href: `${import.meta.env.BASE_URL}#our-items` },
+        { label: 'About', href: `${import.meta.env.BASE_URL}#director` },
         { label: 'Why Us', href: '#why' },
         { label: 'Cart', href: '#book' },
       ]

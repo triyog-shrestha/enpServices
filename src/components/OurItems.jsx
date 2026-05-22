@@ -36,6 +36,8 @@ export function OurItems({ cartItems, addToCart, onRequestAdd }) {
         </div>
       </div>
 
+      <p className="section-guide">Add products to your cart. Click an item to set quantity in the modal, then proceed to the booking form to submit your request; product prices are shown per item.</p>
+
       <div className="featured-track" ref={itemsTrackRef}>
         {products.map((item) => {
           const inCart = cartItems.some((c) => c.title === item.title)

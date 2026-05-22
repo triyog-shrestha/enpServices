@@ -4,6 +4,7 @@ import './index.css'
 import logo from './assets/logo.jpg'
 import App from './App.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
+import AmcPlansPage from './pages/AmcPlansPage.jsx'
 
 function setFavicon(href) {
   let link = document.querySelector('link[rel="icon"]')
@@ -31,9 +32,10 @@ function setFavicon(href) {
 setFavicon(logo)
 
 const isProductsPage = window.location.pathname.startsWith(`${import.meta.env.BASE_URL}products`)
+const isAmcPlansPage = window.location.pathname.startsWith(`${import.meta.env.BASE_URL}amc-plans`)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {isProductsPage ? <ProductsPage /> : <App />}
+    {isProductsPage ? <ProductsPage /> : isAmcPlansPage ? <AmcPlansPage /> : <App />}
   </StrictMode>,
 )

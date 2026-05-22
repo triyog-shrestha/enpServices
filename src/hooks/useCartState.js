@@ -72,11 +72,23 @@ export function useCartState() {
 
   const calculateTotalCost = () => {
     const total = cartItems.reduce((sum, item) => {
-      const n = Number.parseFloat(item.price.replace(/[^\d.]/g, ''))
+      const rawPrice = item.price
+      let n = Number.NaN
+
+      if (typeof rawPrice === 'number') {
+        n = rawPrice
+      } else if (typeof rawPrice === 'string') {
+        const normalizedPrice = rawPrice.replace(/,/g, '')
+        const match = normalizedPrice.match(/-?\d+(?:\.\d+)?/)
+        n = match ? Number.parseFloat(match[0]) : Number.NaN
+      }
+
       const quantity = Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : 1
       return Number.isNaN(n) ? sum : sum + n * quantity
     }, 0)
-    return `Rs ${total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+    const rounded = Math.round(total * 100) / 100
+    const formatted = rounded % 1 === 0 ? rounded.toLocaleString('en-US') : rounded.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+    return `Rs ${formatted}`
   }
 
   return { cartItems, toasts, addToCart, addToCartWithQuantity, removeFromCart, clearCart, calculateTotalCost }

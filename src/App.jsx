@@ -10,7 +10,7 @@ import { ContactForm } from './components/ContactForm.jsx'
 import { Footer } from './components/Footer.jsx'
 import { useCartState } from './hooks/useCartState.js'
 import { useFadeInObserver } from './hooks/useFadeInObserver.js'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 function App() {
   const { cartItems, toasts, addToCart, addToCartWithQuantity, removeFromCart, clearCart, calculateTotalCost } = useCartState()
@@ -18,6 +18,70 @@ function App() {
   useFadeInObserver()
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [modalItem, setModalItem] = useState(null)
+  const formRef = useRef(null)
+
+  const handleFeaturedServiceBooking = (item, phoneNumber) => {
+    const bookingItem = {
+      ...item,
+      category: item.premiumCategory || 'Featured Service',
+    }
+
+    addToCart(bookingItem)
+
+    setTimeout(() => {
+      const form = formRef.current
+      if (!form) {
+        return
+      }
+
+      const phoneInput = form.querySelector('input[name="phone"]')
+      const messageInput = form.querySelector('textarea[name="message"]')
+
+      if (phoneInput) {
+        phoneInput.value = phoneNumber
+      }
+
+      if (messageInput) {
+        messageInput.value = `Featured service booking: ${item.title}`
+      }
+
+      const submitEvent = new Event('submit', { bubbles: true, cancelable: true })
+      form.dispatchEvent(submitEvent)
+    }, 350)
+  }
+
+  // Handle AMC form auto-submission
+  useEffect(() => {
+    const pendingData = localStorage.getItem('pendingAMCSubmission')
+    if (pendingData && formRef.current) {
+      try {
+        const { phoneNumber } = JSON.parse(pendingData)
+        
+        // Set a small delay to ensure form is fully rendered
+        const timer = setTimeout(() => {
+          const phoneInput = formRef.current?.querySelector('input[name="phone"]')
+          if (phoneInput) {
+            phoneInput.value = phoneNumber
+            
+            // Auto-submit the form after a brief delay
+            setTimeout(() => {
+              if (formRef.current) {
+                const submitEvent = new Event('submit', { bubbles: true, cancelable: true })
+                formRef.current.dispatchEvent(submitEvent)
+              }
+              // Clear the stored data after submission
+              localStorage.removeItem('pendingAMCSubmission')
+            }, 100)
+          }
+        }, 300)
+        
+        return () => clearTimeout(timer)
+      } catch (error) {
+        console.error('Error processing AMC submission:', error)
+        localStorage.removeItem('pendingAMCSubmission')
+      }
+    }
+  }, [])
 
   const openQuantityModal = (item) => {
     setModalItem(item)
@@ -63,11 +127,11 @@ function App() {
 
           <div className="wave" aria-hidden="true" />
 
-          <MeetOurDirector />
+          <FeaturedServices cartItems={cartItems} onBookNow={handleFeaturedServiceBooking} />
 
-          <FeaturedServices cartItems={cartItems} addToCart={addToCart} />
 
           <OurItems cartItems={cartItems} addToCart={addToCart} onRequestAdd={openQuantityModal} />
+
 
           <QuantityModal
             isOpen={isModalOpen}
@@ -78,7 +142,10 @@ function App() {
 
           <WhyChooseUs />
 
+          <MeetOurDirector />
+
           <ContactForm
+            ref={formRef}
             cartItems={cartItems}
             removeFromCart={removeFromCart}
             clearCart={clearCart}

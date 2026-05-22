@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, forwardRef } from 'react'
 
-export function ContactForm({ cartItems, removeFromCart, clearCart, totalCost }) {
+export const ContactForm = forwardRef(function ContactForm({ cartItems, removeFromCart, clearCart, totalCost }, ref) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [statusMessage, setStatusMessage] = useState('')
 
@@ -20,7 +20,7 @@ export function ContactForm({ cartItems, removeFromCart, clearCart, totalCost })
         quantity: Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : 1
       }))
       formData.set('cart', JSON.stringify(cartPayload))
-      formData.delete('totalCost')
+      formData.set('totalCost', String(totalCost ?? ''))
 
       // ensure a single, trimmed Web3Forms access key is present
       const rawKey = formData.get('access_key') || 'fe9891ae-f153-4c4c-84cd-ffe22db0306c'
@@ -52,6 +52,7 @@ export function ContactForm({ cartItems, removeFromCart, clearCart, totalCost })
     <section className="block form-section fade-in" id="book">
       <h2>Book a Technical Expert</h2>
       <p>Fill out the form and we will assign our nearest technician to your location.</p>
+      
       <ul className="contact-list">
         <li>Mahalaxmi-4, Lalitpur</li>
         <li>+977 9841082723</li>
@@ -82,17 +83,18 @@ export function ContactForm({ cartItems, removeFromCart, clearCart, totalCost })
         </div>
       </div>
 
-      <form className="booking-form" onSubmit={handleSubmit}>
+      <form ref={ref} className="booking-form" onSubmit={handleSubmit}>
         <input type="hidden" name="access_key" value="fe9891ae-f153-4c4c-84cd-ffe22db0306c" />
+        <input type="hidden" name="totalCost" value={totalCost} />
 
         <label htmlFor="fullName">Full Name</label>
-        <input id="fullName" name="name" type="text" placeholder="eg: LeBron James" required />
+        <input id="fullName" name="name" type="text" placeholder="eg: LeBron James" />
 
         <label htmlFor="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="name@example.com" required />
+        <input id="email" name="email" type="email" placeholder="name@example.com" />
 
         <label htmlFor="phone">Phone Number</label>
-        <input id="phone" name="phone" type="tel" placeholder="+977" />
+        <input id="phone" name="phone" type="tel" placeholder="+977" required/>
 
         <label htmlFor="address">Address</label>
         <input id="address" name="address" type="text" placeholder="Tole, Ward No., City, District" />
@@ -108,4 +110,4 @@ export function ContactForm({ cartItems, removeFromCart, clearCart, totalCost })
       </form>
     </section>
   )
-}
+})

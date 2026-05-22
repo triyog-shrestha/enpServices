@@ -10,13 +10,14 @@ export function Hero() {
           dependability.
         </p>
         <div className="hero-actions">
-          <button className="btn btn-primary" type="button" onClick={() => window.location.href = '#services'}>
+          <button className="btn btn-primary" type="button" onClick={() => window.location.href = '#featured-services'}>
             Get Service Now <span aria-hidden="true">{'->'}</span>
           </button>
           <button className="btn btn-ghost" type="button" onClick={() => window.location.href = '#book'}>
             Contact Us
           </button>
         </div>
+        
       </div>
       <div className="hero-visual-column" aria-label="Service highlights">
         <div className="hero-logo-shell">
@@ -24,7 +25,7 @@ export function Hero() {
         </div>
         <div className="hero-stats">
           <article className="hero-stat">
-            <strong>500+</strong>
+            <strong>2500+</strong>
             <span>Projects Completed</span>
           </article>
           <article className="hero-stat">

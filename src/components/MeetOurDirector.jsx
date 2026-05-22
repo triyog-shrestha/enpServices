@@ -1,24 +1,13 @@
-import heroPlaceholder from '../assets/hero.png'
-import directorPortrait from '../assets/director.jpg'
-
 export function MeetOurDirector() {
   return (
-    <section className="block services-card fade-in" id="services">
+    <section className="block services-card director-card fade-in" id="director">
       <div className="section-title">
         <h2>Meet Our Director</h2>
         <span className="underline" aria-hidden="true" />
       </div>
+      
 
       <div className="director-section">
-        <div className="director-photo-shell">
-          <img
-            className="director-photo"
-            src={directorPortrait || heroPlaceholder}
-            alt="Director portrait"
-            loading="lazy"
-          />
-        </div>
-
         <div className="director-body">
           <h3 className="director-name">Ram Kumar Budhathoki</h3>
           <p className="director-role">Director — Electrical & Plumbing Service Pvt. Ltd.</p>
