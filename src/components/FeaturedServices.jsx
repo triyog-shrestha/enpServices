@@ -59,10 +59,6 @@ export function FeaturedServices({ cartItems = [], onBookNow }) {
     closePhoneModal()
   }
 
-  // NOTE: `bookedTitles` is an optimistic set updated on booking to give
-  // immediate UI feedback. It is not synced back from `cartItems` here to
-  // avoid cascading renders — cart changes will still reflect on next render.
-
   return (
     <section className="block featured-section fade-in" id="featured-services">
       <div className="featured-header">
@@ -79,8 +75,6 @@ export function FeaturedServices({ cartItems = [], onBookNow }) {
           </button>
         </div>
       </div>
-
-      <p className="section-guide">Book each service by clicking "Book Now" — enter your phone number and our team will contact you to confirm details. Final price is determined on site.</p>
 
       <div className="featured-track" ref={featuredTrackRef}>
           {featuredServices.map((item) => {
@@ -129,16 +123,18 @@ export function FeaturedServices({ cartItems = [], onBookNow }) {
                     Click to view pricing plans
                   </button>
                 ) : (
+
                   <button
+                    className={`btn-add-cart${inCart ? ' btn-add-cart--added' : ''}`}
                     type="button"
-                    className={`featured-action${inCart ? ' featured-action--added' : ''}`}
                     onClick={() => { if (!inCart) openPhoneModal(item) }}
                     aria-label={inCart ? `${item.title} already booked` : `Book ${item.title}`}
                     disabled={inCart}
                   >
-                    {inCart ? '✓ Booked' : 'Book Now'}
+                    {inCart ? 'Booked' : 'Book Now'}
                   </button>
                 )}
+
               </div>
             </article>
           )

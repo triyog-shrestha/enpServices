@@ -3,7 +3,6 @@ export function Hero() {
   return (
     <section className="hero block fade-in" id="home">
       <div className="hero-copy-column">
-        <span className="hero-eyebrow">E&P Services</span>
         <h1>Your Trusted Service Partner</h1>
         <p className="hero-copy">
           Electrical, Plumbing, AC Repair, Networking, Motorwork and Consultancy Solutions. Precision engineering meets

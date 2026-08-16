@@ -22,8 +22,9 @@ export const ContactForm = forwardRef(function ContactForm({ cartItems, removeFr
       formData.set('cart', JSON.stringify(cartPayload))
       formData.set('totalCost', String(totalCost ?? ''))
 
-      // ensure a single, trimmed Web3Forms access key is present
-      const rawKey = formData.get('access_key') || 'fe9891ae-f153-4c4c-84cd-ffe22db0306c'
+      // ensure a single, trimmed Web3Forms access key is present without hardcoding it in Git
+      const defaultKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || ''
+      const rawKey = formData.get('access_key') || defaultKey
       const accessKey = String(rawKey).trim()
       formData.set('access_key', accessKey)
 

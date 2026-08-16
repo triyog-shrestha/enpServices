@@ -22,24 +22,6 @@ const commonPlanFeatures = [
   'Emergency visit within 1 hour',
 ]
 
-const amcInfoBlocks = [
-  {
-    title: 'What is an AMC?',
-    body: [
-      'Think of an Electrical AMC (Annual Maintenance Contract) as a year-round health insurance policy for your building\'s power grid.',
-      'It is a simple, ongoing contract that covers your routine maintenance and steps in to fix unexpected electrical problems before they get out of hand. Instead of waiting for a fuse to blow or a machine to break down, an AMC ensures your systems are regularly checked, cleaned, and tested by professionals.',
-    ],
-  },
-  {
-    title: 'Why do you need it?',
-    items: [
-      'It prevents electrical disasters: Loose wires and overloaded panels are the leading causes of workplace electrical fires. Regular check-ups spot these hidden dangers early, keeping your team and your property safe.',
-      'It stops problems before they start: The main goal of an AMC is prevention. By catching small glitches today, it ensures you won\'t face a major, unexpected electrical issue tomorrow that shuts down your business.',
-      'Zero stress, zero hassle: When a power issue does pop up, you don\'t have to scramble to find a reliable technician or worry about sudden, expensive repair bills. You just make one call, and a dedicated team is already on the way to fix it.',
-    ],
-  },
-]
-
 const amcPlans = [
   {
     name: 'Small Scale Business',
@@ -53,6 +35,7 @@ const amcPlans = [
     amount: 5000,
     price: 'Rs. 5,000/month',
     notes: 'Coverage time 24/7',
+    isPopular: true,
     features: ['2 mandatory visit', ...commonPlanFeatures, 'Networking', 'CCTV maintenance'],
   },
   {
@@ -82,6 +65,7 @@ function AmcPlansPage() {
   useFadeInObserver()
   const { cartItems, toasts, addToCart } = useCartState()
   const [isPhoneModalOpen, setIsPhoneModalOpen] = useState(false)
+  const [isInfoModalOpen, setIsInfoModalOpen] = useState(false)
   const [selectedPlan, setSelectedPlan] = useState(null)
   const [phoneNumber, setPhoneNumber] = useState('')
   const [phoneError, setPhoneError] = useState('')
@@ -154,24 +138,14 @@ function AmcPlansPage() {
 
         <main>
           <section className="block amc-hero fade-in">
-            <span className="hero-eyebrow">Annual Maintenance Plans</span>
-            <h1>Choose The AMC Package That Fits Your Property</h1>
-
-            <div className="amc-info-grid">
-              {amcInfoBlocks.map((block) => (
-                <article className="amc-info-card" key={block.title}>
-                  <h2>{block.title}</h2>
-                  {'body' in block ? (
-                    block.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)
-                  ) : (
-                    <ul>
-                      {block.items.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  )}
-                </article>
-              ))}
+            <div className="amc-hero-head">
+              <h1>Choose The AMC Package That Fits Your Property</h1>
+              <p className="amc-hero-subtitle">
+                Protect your electrical systems, reduce downtime, and stay ahead of costly breakdowns with a plan tailored to your property.
+              </p>
+              <button type="button" className="amc-info-link" onClick={() => setIsInfoModalOpen(true)}>
+                What is an AMC? Learn more
+              </button>
             </div>
           </section>
 
@@ -189,7 +163,8 @@ function AmcPlansPage() {
                 const inCart = cartItems.some((item) => item.title === cartTitle)
 
                 return (
-                <article className="amc-card" key={plan.name}>
+                <article className={`amc-card${plan.isPopular ? ' amc-card--popular' : ''}`} key={plan.name}>
+                  {plan.isPopular ? <span className="amc-card-badge">Most Popular</span> : null}
                   <h3 className="amc-card-title">{plan.name}</h3>
                   <div className="amc-card-body">
                     <p className="amc-price">{plan.price}</p>
@@ -215,6 +190,22 @@ function AmcPlansPage() {
             </div>
           </section>
         </main>
+
+        {isInfoModalOpen ? (
+          <div className="modal-overlay" onClick={() => setIsInfoModalOpen(false)} role="dialog" aria-modal="true" aria-hidden={!isInfoModalOpen}>
+            <div className="modal-card amc-info-modal-card" onClick={(event) => event.stopPropagation()}>
+              <h3 className="modal-title">What is an AMC?</h3>
+              <div className="modal-body">
+                <p className="amc-info-text">
+                  An Annual Maintenance Contract is a proactive service plan that keeps your electrical systems inspected, maintained, and protected year-round. Instead of waiting for failures to happen, an AMC helps prevent breakdowns, reduces downtime, and gives you fast support when issues arise.
+                </p>
+              </div>
+              <div className="modal-actions">
+                <button type="button" className="btn btn-primary" onClick={() => setIsInfoModalOpen(false)}>Close</button>
+              </div>
+            </div>
+          </div>
+        ) : null}
 
         {isPhoneModalOpen ? (
           <div className="modal-overlay" onClick={closePhoneModal} role="dialog" aria-modal="true" aria-hidden={!isPhoneModalOpen}>

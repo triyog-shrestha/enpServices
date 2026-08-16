@@ -5,6 +5,7 @@ import logo from './assets/logo.jpg'
 import App from './App.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
 import AmcPlansPage from './pages/AmcPlansPage.jsx'
+import { applySeo } from './utils/seo.js'
 
 function setFavicon(href) {
   let link = document.querySelector('link[rel="icon"]')
@@ -33,6 +34,14 @@ setFavicon(logo)
 
 const isProductsPage = window.location.pathname.startsWith(`${import.meta.env.BASE_URL}products`)
 const isAmcPlansPage = window.location.pathname.startsWith(`${import.meta.env.BASE_URL}amc-plans`)
+
+if (isProductsPage) {
+  applySeo('products')
+} else if (isAmcPlansPage) {
+  applySeo('amc')
+} else {
+  applySeo('home')
+}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

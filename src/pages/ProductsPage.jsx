@@ -11,46 +11,35 @@ function ProductsPage() {
   const { cartItems, addToCart, addToCartWithQuantity, removeFromCart, calculateTotalCost, toasts } = useCartState()
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [modalItem, setModalItem] = useState(null)
-
-  const openQuantityModal = (item) => {
-    setModalItem(item)
-    setIsModalOpen(true)
-  }
-
-  const closeQuantityModal = () => {
-    setIsModalOpen(false)
-    setModalItem(null)
-  }
-
-  const handleAddWithQuantity = (quantity) => {
-    if (typeof addToCartWithQuantity === 'function') {
-      addToCartWithQuantity(modalItem, quantity)
-    } else if (typeof addToCart === 'function') {
-      addToCart(modalItem, quantity)
-    }
-    closeQuantityModal()
-  }
-
-  const categories = useMemo(() => getCategoryLabels(), [])
-  const sampleProducts = useMemo(() => getAllProducts(), [])
   const [draftQuery, setDraftQuery] = useState('')
   const [sortKey, setSortKey] = useState('default')
 
+  const categories = useMemo(() => getCategoryLabels(), [])
+  const allProducts = useMemo(() => getAllProducts(), [])
+
   const visibleProducts = useMemo(() => {
-    let nextProducts = sampleProducts.filter((product) =>
-      product.title.toLowerCase().includes(draftQuery.trim().toLowerCase()),
+    let list = allProducts.filter((p) =>
+      p.title.toLowerCase().includes(draftQuery.trim().toLowerCase()),
     )
-
     if (sortKey.startsWith('category:')) {
-      const selectedCategory = sortKey.replace('category:', '')
-      nextProducts = nextProducts.filter((product) => product.category === selectedCategory)
+      const selected = sortKey.replace('category:', '')
+      list = list.filter((p) => p.category === selected)
     }
+    return list
+  }, [draftQuery, allProducts, sortKey])
 
-    return nextProducts
-  }, [draftQuery, sampleProducts, sortKey])
+  const openQuantityModal = (item) => { setModalItem(item); setIsModalOpen(true) }
+  const closeQuantityModal = () => { setIsModalOpen(false); setModalItem(null) }
+  const handleAddWithQuantity = (quantity) => {
+    if (typeof addToCartWithQuantity === 'function') addToCartWithQuantity(modalItem, quantity)
+    else addToCart(modalItem, quantity)
+    closeQuantityModal()
+  }
 
   return (
     <div className="remake-wrap products-page">
+
+      {/* ── Toasts ── */}
       <div className="toast-container" aria-live="polite" aria-atomic="false">
         {toasts.map((toast) => (
           <div key={toast.id} className={`toast toast--${toast.type}`}>
@@ -68,105 +57,100 @@ function ProductsPage() {
         <Navbar />
 
         <main>
-          <section className="block products-hero">
-            <div className="products-hero-copy">
-              <span className="products-kicker">Product Catalog</span>
-              <h1>Find the right product faster</h1>
-              <p className="hero-copy">
-                Browse products by name or category. Search quickly, filter by category, and keep track of what
-                is already in your cart.
-              </p>
-
-              <div className="products-toolbar">
-                <label className="products-search" htmlFor="productSearch">
-                  <input
-                    id="productSearch"
-                    type="search"
-                    placeholder="Search by name"
-                    value={draftQuery}
-                    onChange={(event) => setDraftQuery(event.target.value)}
-                  />
-                </label>
-
-                <label className="products-sort" htmlFor="productSort">
-                  <span>Filter by category</span>
-                  <select id="productSort" value={sortKey} onChange={(event) => setSortKey(event.target.value)}>
-                    <option value="default">All products</option>
-
-                    {categories.map((category) => (
-                      <option key={category.key} value={`category:${category.label}`}>
-                        {category.label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
+          {/* ── Compact page header ── */}
+          <section className="block products-page-header">
+            <div className="products-page-title-row">
+              <div>
+                <h1 className="products-page-title">All Products</h1>
+                <p className="products-page-subtitle">
+                  {allProducts.length} products across {categories.length} categories
+                </p>
               </div>
-
-              <div className="products-meta">
-                <span>
-                  {visibleProducts.length} total products{visibleProducts.length === 1 ? '' : 's'}
-                </span>
-              
-              </div>
-
-              <button className="btn btn-ghost products-back-btn" type="button" onClick={() => { window.location.href = '/' }}>
-                Go Back
+              <button
+                className="btn btn-ghost products-back-btn"
+                type="button"
+                onClick={() => { window.location.href = '/' }}
+              >
+                ← Go Back
               </button>
             </div>
 
-            <div className="products-hero-visual" aria-label="Catalog highlights">
-              <div className="products-hero-panel">
-                <div className="products-hero-ring" aria-hidden="true" />
-                <div className="products-hero-stats">
-                  <article className="products-hero-stat">
-                    <strong>{sampleProducts.length}</strong>
-                    <span> Products</span>
-                  </article>
-                  <article className="products-hero-stat">
-                    <strong>{categories.length}</strong>
-                    <span>Categories</span>
-                  </article>
-                  <article className="products-hero-stat">
-                    <strong>Fast</strong>
-                    <span>Search & Filter</span>
-                  </article>
-                </div>
-              </div>
+            {/* ── Inline filter toolbar ── */}
+            <div className="products-toolbar">
+              <input
+                id="productSearch"
+                type="search"
+                className="products-search-input"
+                placeholder="Search by name…"
+                value={draftQuery}
+                onChange={(e) => setDraftQuery(e.target.value)}
+                aria-label="Search products by name"
+              />
+
+              <select
+                id="productSort"
+                className="products-sort-select"
+                value={sortKey}
+                onChange={(e) => setSortKey(e.target.value)}
+                aria-label="Filter by category"
+              >
+                <option value="default">All categories</option>
+                {categories.map((cat) => (
+                  <option key={cat.key} value={`category:${cat.label}`}>{cat.label}</option>
+                ))}
+              </select>
+
+              <span className="products-count" aria-live="polite">
+                {visibleProducts.length} result{visibleProducts.length !== 1 ? 's' : ''}
+              </span>
             </div>
           </section>
 
-          <section className="block featured-section products-section">
-            <div className="section-title">
-              <h2>All Products</h2>
-              <span className="underline" aria-hidden="true" />
-            </div>
-
+          {/* ── Product grid ── */}
+          <section className="block products-section">
             <div className="products-grid">
-              {visibleProducts.map((item) => (
-                <article className="featured-card products-card" key={item.title}>
-                  <div className="shop-icon-wrap">
-                    <img src={item.image} alt={item.title} loading="lazy" className="shop-icon" />
-                  </div>
-                  <div className="featured-body">
-                    <h3>{item.title}</h3>
-                    <p className="featured-price">{item.price}</p>
-                    <p className="featured-description">{item.description || 'Sample product entry from the catalog.'}</p>
-                    <button
-                      className={`btn-add-cart${cartItems.some((c) => c.title === item.title) ? ' btn-add-cart--added' : ''}`}
-                      type="button"
-                      onClick={() => openQuantityModal(item)}
-                      aria-label={cartItems.some((c) => c.title === item.title) ? `${item.title} added to cart` : `Add ${item.title} to cart`}
-                    >
-                      {cartItems.some((c) => c.title === item.title) ? '✓ Added' : '+ Add to Cart'}
-                    </button>
-                  </div>
-                </article>
-              ))}
+              {visibleProducts.map((item) => {
+                const inCart = cartItems.some((c) => c.title === item.title)
+                return (
+                  <article className="product-card" key={item.title}>
+                    <div className="product-card__image-wrap">
+                      {item.image
+                        ? <img src={item.image} alt={item.title} loading="lazy" className="product-card__image" />
+                        : <div className="product-card__image-placeholder" aria-hidden="true" />
+                      }
+                    </div>
+                    <div className="product-card__body">
+                      <span className="product-card__category">{item.category}</span>
+                      <h3 className="product-card__title">{item.title}</h3>
+                      <p className="product-card__price">{item.price}</p>
+                      <button
+                        className={`product-card__btn${inCart ? ' product-card__btn--added' : ''}`}
+                        type="button"
+                        onClick={() => openQuantityModal(item)}
+                        aria-label={inCart ? `${item.title} added to cart` : `Add ${item.title} to cart`}
+                      >
+                        {inCart ? '✓ Added' : '+ Add to Cart'}
+                      </button>
+                    </div>
+                  </article>
+                )
+              })}
             </div>
+
+            {visibleProducts.length === 0 && (
+              <p className="products-empty">No products match your search.</p>
+            )}
           </section>
-          <QuantityModal isOpen={isModalOpen} item={modalItem} onClose={closeQuantityModal} onConfirm={handleAddWithQuantity} />
+
+          <QuantityModal
+            isOpen={isModalOpen}
+            item={modalItem}
+            onClose={closeQuantityModal}
+            onConfirm={handleAddWithQuantity}
+          />
         </main>
 
+        {/* ── Cart summary ── */}
         <div style={{ padding: '18px' }}>
           <div className="cart-panel" aria-live="polite">
             <div className="cart-panel-header">
@@ -177,10 +161,8 @@ function ProductsPage() {
               <div className="cart-items">
                 {cartItems.map((item) => (
                   <div className="cart-chip" key={item.title}>
-                    <span>{item.title} x{Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : 1}</span>
-                    <button type="button" onClick={() => removeFromCart(item.title)} aria-label={`Remove ${item.title}`}>
-                      ×
-                    </button>
+                    <span>{item.title} ×{Number.isInteger(item.quantity) && item.quantity > 0 ? item.quantity : 1}</span>
+                    <button type="button" onClick={() => removeFromCart(item.title)} aria-label={`Remove ${item.title}`}>×</button>
                   </div>
                 ))}
               </div>

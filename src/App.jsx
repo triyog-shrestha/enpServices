@@ -1,11 +1,9 @@
 import './styles/site.css'
 import Navbar from './components/Navbar.jsx'
 import { Hero } from './components/Hero.jsx'
-import { MeetOurDirector } from './components/MeetOurDirector.jsx'
 import { FeaturedServices } from './components/FeaturedServices.jsx'
 import { OurItems } from './components/OurItems.jsx'
 import QuantityModal from './components/QuantityModal.jsx'
-import { WhyChooseUs } from './components/WhyChooseUs.jsx'
 import { ContactForm } from './components/ContactForm.jsx'
 import { Footer } from './components/Footer.jsx'
 import { useCartState } from './hooks/useCartState.js'
@@ -140,9 +138,7 @@ function App() {
             onConfirm={(qty) => { handleAddWithQuantity(qty); closeQuantityModal() }}
           />
 
-          <WhyChooseUs />
 
-          <MeetOurDirector />
 
           <ContactForm
             ref={formRef}
