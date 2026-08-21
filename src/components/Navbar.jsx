@@ -13,8 +13,6 @@ function Navbar() {
         { label: 'Home', href: `${import.meta.env.BASE_URL}#home` },
         { label: 'Services', href: `${import.meta.env.BASE_URL}#featured-services` },
         { label: 'Products', href: `${import.meta.env.BASE_URL}#our-items` },
-        { label: 'About', href: `${import.meta.env.BASE_URL}#director` },
-        { label: 'Why Us', href: '#why' },
         { label: 'Cart', href: '#book' },
       ]
 
