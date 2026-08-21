@@ -1,20 +1,20 @@
 # enpServices
 
-A modern React + Vite web application for showcasing services and products. The project features a responsive user interface, service listings, product catalogs, contact forms, and client-side routing for a seamless user experience.
+A modern React and Vite web application for showcasing services and products. The application provides a responsive user interface, service listings, product catalogs, contact functionality, and client-side routing for a seamless user experience.
 
-## 🚀 Features
+## Features
 
 * Built with React 19 and Vite
-* Fast development with Hot Module Replacement (HMR)
-* Responsive and modern UI
-* Client-side routing using React Router
-* Modular component architecture
-* Product and service showcase pages
+* Fast development environment with Hot Module Replacement (HMR)
+* Responsive and modern user interface
+* Client-side routing with React Router
+* Modular and maintainable component architecture
+* Dedicated service and product showcase pages
 * Contact form functionality
-* Simple cart state management
+* Lightweight client-side cart state management
 * GitHub Pages deployment support
 
-## 📦 Tech Stack
+## Technology Stack
 
 * React 19
 * Vite
@@ -22,7 +22,7 @@ A modern React + Vite web application for showcasing services and products. The 
 * JavaScript (ES6+)
 * CSS3
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 enpServices/
@@ -39,22 +39,17 @@ enpServices/
 └── vite.config.js
 ```
 
-## 🛠 Installation
+## Installation
 
-Clone the repository:
+Clone the repository and install the project dependencies:
 
 ```bash
 git clone <repository-url>
 cd enpServices
-```
-
-Install dependencies:
-
-```bash
 npm install
 ```
 
-## 💻 Development
+## Development
 
 Start the development server:
 
@@ -62,52 +57,54 @@ Start the development server:
 npm run dev
 ```
 
-The application will be available at:
+Once the server is running, the application will be available at:
 
 ```text
 http://localhost:5173
 ```
 
-## 🏗 Build
+## Production Build
 
-Create a production build:
+Create an optimized production build using:
 
 ```bash
 npm run build
 ```
 
-The generated files will be placed in the `dist/` directory.
+The resulting production files will be generated in the `dist/` directory.
 
-## 🔍 Preview Production Build
+## Preview Production Build
+
+To preview the production build locally:
 
 ```bash
 npm run preview
 ```
 
-## 🚢 Deployment
+## Deployment
 
-Deploy to GitHub Pages:
+The project supports deployment to GitHub Pages.
 
 ```bash
 npm run deploy
 ```
 
-> Ensure the repository settings and homepage configuration are properly set before deployment.
+Before deploying, ensure that the repository configuration, GitHub Pages settings, and application homepage/base path are correctly configured.
 
-## 📜 Available Scripts
+## Available Scripts
 
-| Command                | Description                    |
-| ---------------------- | ------------------------------ |
-| npm run dev            | Start development server       |
-| npm run build          | Create production build        |
-| npm run preview        | Preview production build       |
-| npm run deploy         | Deploy to GitHub Pages         |
-| npm run lint           | Run ESLint                     |
-| npm run contact-server | Start contact service endpoint |
+| Command                  | Description                                     |
+| ------------------------ | ----------------------------------------------- |
+| `npm run dev`            | Starts the Vite development server              |
+| `npm run build`          | Creates an optimized production build           |
+| `npm run preview`        | Serves the production build locally for testing |
+| `npm run deploy`         | Deploys the application to GitHub Pages         |
+| `npm run lint`           | Runs ESLint to identify code quality issues     |
+| `npm run contact-server` | Starts the contact service endpoint             |
 
-## 🧩 Components
+## Application Components
 
-The application includes:
+The application includes the following primary components and features:
 
 * Navigation Bar
 * Hero Section
@@ -116,52 +113,66 @@ The application includes:
 * AMC Plans Page
 * Contact Form
 * Footer
-* Custom Hooks for State Management
+* Custom Hooks for application state management
 
-## 🔧 Troubleshooting
+## Requirements
 
-### Vite requires a newer Node.js version
-
-This project requires:
+The project requires a supported version of Node.js:
 
 ```text
 Node.js 20.19+ or Node.js 22+
 ```
 
-Check your version:
+Check your installed Node.js version with:
 
 ```bash
 node -v
 ```
 
-If your version is below the requirement, upgrade Node.js before running the project.
+If your version does not meet the requirements, upgrade Node.js before installing dependencies or running the application.
+
+## Troubleshooting
 
 ### Missing Dependencies
+
+If dependencies are missing or the project fails to start, reinstall them with:
 
 ```bash
 npm install
 ```
 
+### Node.js Version Issues
+
+If Vite reports that your Node.js version is unsupported, verify your current version:
+
+```bash
+node -v
+```
+
+Upgrade to Node.js 20.19 or later, or use Node.js 22 or later.
+
 ### Linting
+
+Run the linter with:
 
 ```bash
 npm run lint
 ```
 
-## 🤝 Contributing
+Address any reported issues before submitting changes or creating a production build.
 
-Contributions are welcome.
+## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push the branch
-5. Open a Pull Request
+Contributions are welcome. To contribute:
 
-## 📄 License
+1. Fork the repository.
+2. Create a dedicated feature branch.
+3. Implement and test your changes.
+4. Commit your changes with a clear and descriptive message.
+5. Push the branch to your fork.
+6. Open a Pull Request for review.
 
-This project is licensed under the MIT License.
 
-## 👨‍💻 Author
+## Author
 
-Developed and maintained by the repository owner
+Developed and maintained by the repository owner.
